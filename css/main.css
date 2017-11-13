@@ -1,0 +1,198 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+.shadow h1, .shadow span, .white {
+  text-shadow: 1px 1px 10px black;
+}
+
+.white {
+  color: white;
+}
+
+.opacity-applied {
+  opacity: 0.4;
+  transition: opacity .3s;
+}
+
+
+
+.graph-cont{
+  width: calc(100% - 40px);
+  width: 100%;
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+  color: #99e071;
+}
+
+.green {
+  color: #34b223;
+}
+
+.light-green {
+  color: #99e071;
+}
+
+.yellow {
+  color: #e8ce79;
+}
+
+.orange {
+  color: #cd894e;
+}
+
+.blue {
+  color: #589199;
+}
+
+#wrapper {
+  text-align: center;
+  border: red solid 2px;
+}
+
+#support p {
+  position: absolute;
+  top: 5em;
+}
+
+
+#logo {
+  display: inline;
+  width: 400px;
+}
+
+.none {
+  display: none;
+}
+
+.icons {
+  color: lightgrey;
+}
+
+.icons:hover {
+  color: grey;
+}
+
+.icons:active {
+  text-decoration: none;
+}
+
+.corner-image {
+  margin: 0;
+  position: fixed;
+  right: -2%;
+  bottom: -20%;
+}
+
+.paragraph {
+  border: 2px red solid;
+}
+
+.paragraph img {
+  z-index: -100;
+}
+
+.cloud1 {
+  width: 20%;
+  position: fixed;
+  top: 15%;
+  right: 80%;
+}
+
+.cloud2 {
+  width: 30%;
+  position: fixed;
+  top: 70%;
+  right: 10%;
+}
+
+.cloud3 {
+  width: 25%;
+  position: fixed;
+  top: 5%;
+  right: 0;
+}
+
+.cloud4 {
+  width: 20%;
+  position: fixed;
+  top: 10%;
+  right: 80%;
+}
+
+.cloud5 {
+  width: 30%;
+  position: fixed;
+  top: 65%;
+  right: 15%;
+}
+
+.cloud6 {
+  width: 20%;
+  position: fixed;
+  top: 10%;
+  right: 0;
+}
+
+.cloud7 {
+  width: 27%;
+  position: fixed;
+  top: 10%;
+  right: 8%;
+}
+
+.cloud8 {
+  width: 25%;
+  position: fixed;
+  top: 70%;
+  right: 15%;
+}
+
+.cloud9 {
+  width: 30%;
+  position: fixed;
+  top: 5%;
+  right: 75%;
+}
+
+
+.btn {
+  width: 100px;
+  -webkit-border-radius: 18;
+  -moz-border-radius: 18;
+  border-radius: 18px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #34b223;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #99e071;
+  text-decoration: none;
+}
+
+#donate-button {
+  background-color: #34b223;
+  margin-top: 3%;
+  border: none;
+  color: white;
+  font-family: "Source Sans Pro", Helvetica;
+  font-size: .8em;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px grey;
+  padding: 10px 20px 10px 20px;
+  transition: background-color .1s;
+}
+
+#donate-button:hover {
+  background-color: #99e071;
+}
