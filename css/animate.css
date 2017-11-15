@@ -17,6 +17,15 @@
   animation-iteration-count: infinite;
 }
 
+.animated2 {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+.animated2.infinite {
+  animation-iteration-count: infinite;
+}
+
 .animated.hinge {
   animation-duration: 2s;
 }

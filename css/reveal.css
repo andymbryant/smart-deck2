@@ -11,7 +11,7 @@
 html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal iframe,
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal p, .reveal blockquote, .reveal pre,
 .reveal a, .reveal abbr, .reveal acronym, .reveal address, .reveal big, .reveal cite, .reveal code,
-.reveal del, .reveal dfn, .reveal em, .reveal img, .reveal ins, .reveal kbd, .reveal q, .reveal s, .reveal samp,
+.reveal del, .reveal dfn, .reveal em, .reveal ins, .reveal kbd, .reveal q, .reveal s, .reveal samp,
 .reveal small, .reveal strike, .reveal strong, .reveal sub, .reveal sup, .reveal tt, .reveal var,
 .reveal b, .reveal u, .reveal center,
 .reveal dl, .reveal dt, .reveal dd, .reveal ol, .reveal ul, .reveal li,
@@ -31,6 +31,14 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
 .reveal article, .reveal aside, .reveal details, .reveal figcaption, .reveal figure,
 .reveal footer, .reveal header, .reveal hgroup, .reveal menu, .reveal nav, .reveal section {
   display: block; }
+
+/*.reveal img {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}*/
 
 /*********************************************
  * GLOBAL STYLES
@@ -190,13 +198,12 @@ body {
  * CONTROLS
  *********************************************/
 .reveal .controls {
-  display: none;
   position: fixed;
-  width: 110px;
-  height: 110px;
-  z-index: 30;
-  right: 10px;
-  bottom: 10px;
+  width: 150px;
+  height: 150px;
+  z-index: 100;
+  right: 5px;
+  top: 0px;
   -webkit-user-select: none; }
 
 .reveal .controls button {
@@ -213,19 +220,23 @@ body {
           transition: all 0.2s ease;
   -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
+
  }
 
 .reveal .controls .enabled {
-  opacity: .5;
+  opacity: .6;
   cursor: pointer; }
 
 .reveal .controls .enabled:active {
+  opacity: .3;
   margin-top: 1px; }
 
 .reveal .controls .navigate-left {
   top: 42px;
+  opacity: .3;
   border-right-width: 22px;
-  border-right-color: #000; }
+  border-right-color: #000;
+  z-index: 100; }
 
 .reveal .controls .navigate-left.fragmented {
   opacity: 0.3; }
@@ -234,10 +245,11 @@ body {
   left: 74px;
   top: 42px;
   border-left-width: 22px;
-  border-left-color: #000; }
+  border-left-color: #000;
+  z-index: 100; }
 
 .reveal .controls .navigate-right.fragmented {
-  opacity: 0.3; }
+  opacity: 1; }
 
 .reveal .controls .navigate-up {
   left: 42px;

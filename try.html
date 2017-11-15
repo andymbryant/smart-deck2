@@ -1,0 +1,216 @@
+<html lang="en" class=" js no-mobile desktop no-ie chrome chrome61 reveal.js-demos-section gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch retina fontface domloaded w-577 gt-240 gt-320 gt-480 lt-640 lt-768 lt-800 lt-1024 lt-1280 lt-1440 lt-1680 lt-1920 portrait no-landscape" id="chart-demo-page"><head>
+	<meta charset="utf-8">
+
+	<title>Charts with Reveal.js</title>
+
+	<meta name="description" content="A plugin for reveal.js">
+	<meta name="author" content="Asvin Goel">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="../reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="../reveal.js/css/theme/black.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script><link rel="stylesheet" type="text/css" href="../reveal.js/css/print/paper.css">
+
+	<!--[if lt IE 9]>
+	<script src="../reveal.js/lib/js/html5shiv.js"></script>
+	<![endif]--><script type="text/javascript" src="../reveal.js-plugins/chart/Chart.min.js"></script><script type="text/javascript" src="../reveal.js-plugins/chart/csv2chart.js"></script><script type="text/javascript" src="../reveal.js-plugins/menu/menu.js"></script>
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><script type="text/javascript" src="../reveal.js/plugin/highlight/highlight.js"></script><script type="text/javascript" src="https://rajgoel.github.io/reveal.js-plugins/menu//lib/jeesh.min.js"></script><script type="text/javascript" src="https://rajgoel.github.io/reveal.js-plugins/menu//lib/bowser.min.js"></script><link rel="stylesheet" href="https://rajgoel.github.io/reveal.js-plugins/menu//menu.css"><link rel="stylesheet" href="https://rajgoel.github.io/reveal.js-plugins/menu//font-awesome-4.3.0/css/font-awesome.min.css"></head>
+
+<body>
+
+	<div class="reveal default center ready" role="application" data-transition-speed="default" data-background-transition="fade">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.577);">
+		<section style="top: 0px; display: block;" class="stack present" data-previous-indexv="0">
+			<section class="past" style="top: 157px; display: none;" data-node-uid="1" hidden="" aria-hidden="true">
+				<h1>Charts with Reveal.js</h1>
+				<p>
+					<small>Created by <a href="http://www.telematique.eu">Asvin Goel</a></small>
+				</p>
+			</section>
+			<section class="past" style="top: 0px; display: block;" data-node-uid="2" hidden="" aria-hidden="true"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+				<h3>Line chart from JSON string</h3>
+				<canvas class="stretch chartjs-render-monitor" data-chart="line" style="height: 575px; width: 960px; display: block;" width="1920" height="960">
+<!--
+{
+ "data": {
+  "labels": ["January"," February"," March"," April"," May"," June"," July"],
+  "datasets":[
+   {
+    "data":[65,59,80,81,56,55,40],
+    "label":"My first dataset","backgroundColor":"rgba(20,220,220,.8)"
+   },
+   {
+    "data":[28,48,40,19,86,27,90],
+    "label":"My second dataset","backgroundColor":"rgba(220,120,120,.8)"
+   }
+  ]
+ },
+ "options": { "responsive": "true" }
+}
+-->
+				</canvas>
+			</section>
+			<section class="past" style="top: 0px; display: block;" data-node-uid="3" hidden="" aria-hidden="true"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+				<h3>Line chart with CSV data and JSON configuration</h3>
+				<canvas class="stretch chartjs-render-monitor" data-chart="line" style="height: 510px; width: 960px; display: block;" width="1920" height="960">
+My first dataset,  65, 59, 80, 81, 56, 55, 40
+<!-- This is a comment -->
+My second dataset, 28, 48, 40, 19, 86, 27, 90
+<!--
+{
+"data" : {
+	"labels" : ["Enero", "Febrero", "Marzo", "Avril", "Mayo", "Junio", "Julio"],
+	"datasets" : [{ "borderColor": "#0f0", "borderDash": ["5","10"] }, { "borderColor": "#0ff" } ]
+	}
+}
+-->
+				</canvas>
+			</section>
+			<section class="present" style="top: 0px; display: block;" data-node-uid="4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+				<h3>Bar chart with CSV data</h3>
+				<canvas class="stretch chartjs-render-monitor" data-chart="bar" style="height: 575px; width: 960px; display: block;" width="1920" height="960">
+,January, February, March, April, May, June, July
+My first dataset, 65, 59, 80, 81, 56, 55, 40
+My second dataset, 28, 48, 40, 19, 86, 27, 90
+				</canvas>
+			</section>
+			<section class="future" aria-hidden="true" hidden="" style="top: 0px; display: block;" data-node-uid="5"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+				<h3>Stacked bar chart from CSV file with JSON configuration</h3>
+				<canvas class="stretch chartjs-render-monitor" data-chart="bar" data-chart-src="chart/data.csv" style="height: 510px; width: 960px; display: block;" width="1920" height="1400">
+<!--
+{
+"data" : {
+"datasets" : [{ "backgroundColor": "#0f0" }, { "backgroundColor": "#0ff" } ]
+},
+"options": { "responsive": true, "scales": { "xAxes": [{ "stacked": true }], "yAxes": [{ "stacked": true }] } }
+}
+-->
+				</canvas>
+			</section>
+			<section class="future" aria-hidden="true" hidden="" style="top: 0px; display: block;" data-node-uid="6"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+				<h3>Pie chart</h3>
+				<canvas class="stretch chartjs-render-monitor" data-chart="pie" style="height: 575px; width: 960px; display: block;" width="1920" height="1400">
+,Black, Red, Green, Yellow
+My first dataset, 40, 40, 20, 6
+My second dataset, 45, 40, 25, 4
+				</canvas>
+			</section>
+			<section class="future" aria-hidden="true" hidden="" style="top: 350px; display: none;" data-node-uid="7">
+				<h2>Credits</h2>
+				<p>
+					The charts are generated using <a href="http://www.chartjs.org/">Chart.js 2.7</a>.
+				</p><p>
+			</p></section>
+			<section class="future" aria-hidden="true" hidden="" style="top: 350px; display: none;" data-node-uid="8">
+			<h2>The end</h2>
+
+<p>Check out other plugins by clicking on &nbsp;<a href="#" onclick="RevealMenu.toggle(); return false;"><i class="fa fa-bars"></i></a>&nbsp; and then on "Plugins <i class="fa fa-external-link"></i>".</p>
+<p>Have a look at the source code &amp; documentation on <a href="https://github.com/rajgoel/reveal.js-plugins">Github</a>.</p>
+
+			</section>
+		</section></div>
+	<div class="backgrounds"><div class="slide-background stack present" data-loaded="true" style="display: block;"><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: block;"></div><div class="slide-background past" data-loaded="true" style="display: block;"></div><div class="slide-background present" style="display: block;" data-loaded="true"></div><div class="slide-background future" style="display: block;" data-loaded="true"></div><div class="slide-background future" style="display: block;" data-loaded="true"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div></div><div class="progress" style="display: block;"><span style="width: 247.286px;"></span></div><aside class="controls" style="display: block;"><button class="navigate-left" aria-label="previous slide" disabled="disabled"></button><button class="navigate-right" aria-label="next slide" disabled="disabled"></button><button class="navigate-up enabled" aria-label="above slide"></button><button class="navigate-down enabled" aria-label="below slide"></button></aside><div class="slide-number" style="display: none;"></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px);">
+				Bar chart with CSV data
+
+,January, February, March, April, May, June, July
+My first dataset, 65, 59, 80, 81, 56, 55, 40
+My second dataset, 28, 48, 40, 19, 86, 27, 90
+
+			</div><nav class="slide-menu slide-menu--left"><ol class="slide-menu-toolbar"><li data-panel="Slides" data-button="0" class="toolbar-panel-button active-toolbar-button"><span class="slide-menu-toolbar-label">Slides</span><br><i class="fa fa-list"></i></li><li data-panel="Custom0" data-button="1" class="toolbar-panel-button"><span class="slide-menu-toolbar-label">Plugins</span><br><i class="fa fa-external-link"></i></li><li data-panel="Custom1" data-button="2" class="toolbar-panel-button"><span class="slide-menu-toolbar-label">About</span><br><i class="fa fa-info"></i></li><li id="close"><span class="slide-menu-toolbar-label">Close</span><br><i class="fa fa-times"></i></li></ol><div data-panel="Slides" class="slide-menu-panel active-menu-panel"><ul class="slide-menu-items"><li class="slide-menu-item past" data-item="0" data-slide-h="0" data-slide-v="0" data-node-uid="9"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Charts with Reveal.js</span></li><li class="slide-menu-item-vertical past" data-item="1" data-slide-h="0" data-slide-v="1" data-node-uid="10"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Line chart from JSON string</span></li><li class="slide-menu-item-vertical past" data-item="2" data-slide-h="0" data-slide-v="2" data-node-uid="11"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Line chart with CSV data and JSON configuration</span></li><li class="slide-menu-item-vertical active" data-item="3" data-slide-h="0" data-slide-v="3" data-node-uid="12"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Bar chart with CSV data</span></li><li class="slide-menu-item-vertical future" data-item="4" data-slide-h="0" data-slide-v="4" data-node-uid="13"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Stacked bar chart from CSV file with JSON configuration</span></li><li class="slide-menu-item-vertical future" data-item="5" data-slide-h="0" data-slide-v="5" data-node-uid="14"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Pie chart</span></li><li class="slide-menu-item-vertical future" data-item="6" data-slide-h="0" data-slide-v="6" data-node-uid="15"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Credits</span></li><li class="slide-menu-item-vertical future" data-item="7" data-slide-h="0" data-slide-v="7" data-node-uid="16"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">The end</span></li></ul></div><div data-panel="Custom0" class="slide-menu-panel slide-menu-custom-panel"><ul class="slide-menu-items">
+<li class="slide-menu-item future" data-item="1" data-node-uid="17"><a href="anything-demo.html" target="_blank" style="text-decoration:none">Anything</a></li>
+<li class="slide-menu-item future" data-item="2" data-node-uid="18"><a href="audio-slideshow-demo.html" target="_blank" style="text-decoration:none">Audio slideshow</a></li>
+<li class="slide-menu-item future" data-item="3" data-node-uid="19"><a href="broadcast-demo.html" target="_blank" style="text-decoration:none">Broadcast</a></li>
+<li class="slide-menu-item future" data-item="4" data-node-uid="20"><a href="chalkboard-demo.html" target="_blank" style="text-decoration:none">Chalkboard</a></li>
+<li class="slide-menu-item future" data-item="5" data-node-uid="21"><a href="chart-demo.html" target="_blank" style="text-decoration:none">Chart</a></li>
+<li class="slide-menu-item future" data-item="6" data-node-uid="22"><a href="customcontrols-demo.html" target="_blank" style="text-decoration:none">Custom controls</a></li>
+<li class="slide-menu-item future" data-item="7" data-node-uid="23"><a href="fullscreen-demo.html" target="_blank" style="text-decoration:none">Fullscreen</a></li>
+<li class="slide-menu-item future" data-item="8" data-node-uid="24"><a href="https://denehyg.github.io/reveal.js-menu" target="_blank" style="text-decoration:none">Menu (by Greg Denehy)</a></li>
+<li class="slide-menu-item future" data-item="9" data-node-uid="25"><a href="spreadsheet-demo.html" target="_blank" style="text-decoration:none">Spreadsheet</a></li>
+</ul></div><div data-panel="Custom1" class="slide-menu-panel slide-menu-custom-panel"><p class="slide-menu-item">
+Instructions:<br>
+Press '?' for keyboard shortcuts. To obtain a PDF-file of the slides open this <a href="?print-pdf" target="_blank">link</a> in Google Chrome and use the print dialog (this may not work for other browsers).
+</p><span class="slide-menu-item">Author: <a href="https://github.com/rajgoel/reveal.js-plugins">Asvin Goel</a></span></div></nav><div class="slide-menu-overlay"></div><div class="slide-menu-button"><a href="#"><i class="fa fa-bars"></i></a></div></div>
+
+	<script src="../reveal.js/lib/js/head.min.js"></script>
+	<script src="../reveal.js/js/reveal.js"></script>
+
+	<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				chart: {
+					defaults: {
+						global: {
+							title: { fontColor: "#FFF" },
+							legend: {
+								position: "bottom",
+								labels: { fontColor: "#FFF" },
+							},
+							tooltips: {
+								labels: { fontColor: "#FFF" },
+							},
+						},
+						scale: {
+							scaleLabel: { fontColor: "#FFF" },
+							gridLines: { color: "#FFF", zeroLineColor: "#FFF" },
+							ticks: { fontColor: "#FFF" },
+						}
+					},
+					line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] },
+					bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]},
+					pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+					radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]},
+				},
+				menu: { // Menu works best with font-awesome installed: sudo apt-get install fonts-font-awesome
+					themes: false,
+					transitions: false,
+					markers: true,
+					hideMissingTitles: true,
+					custom: [
+				            { title: 'Plugins', icon: '<i class="fa fa-external-link"></i>', src: 'toc.html' },
+				            { title: 'About', icon: '<i class="fa fa-info"></i>', src: 'about.html' }
+				        ]
+				},
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // none/fade/slide/convex/concave/zoom
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal.js-plugins/chart/Chart.min.js' },
+					{ src: '../reveal.js-plugins/chart/csv2chart.js' },
+					{ src: '../reveal.js-plugins/menu/menu.js' },
+				]
+			});
+	</script>
+<a href="https://github.com/rajgoel/reveal.js-plugins"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+
+
+
+</body></html>
