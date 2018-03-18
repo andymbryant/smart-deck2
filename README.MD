@@ -11,8 +11,9 @@ This is a fundraising deck for The SMART Program, an education non-profit in San
 * [Chart.js](http://www.chartjs.org/)
 
 ## Screenshots
-![Landing Page](https://github.com/andymbryant/The-Beer-Chart-Front/blob/master/TheBeerChart.jpg)
-![Login](https://github.com/andymbryant/The-Beer-Chart-Front/blob/master/TheBeerChart_Login.jpg)
+![Page](https://github.com/andymbryant/smart-deck2/blob/master/image3.jpg)
+![Page](https://github.com/andymbryant/smart-deck2/blob/master/image1.jpg)
+![Page](https://github.com/andymbryant/smart-deck2/blob/master/image2.jpg)
 
 ## Authors
 * **Andy Bryant** - *Initial work* - [Github](https://github.com/andymbryant)
