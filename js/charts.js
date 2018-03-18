@@ -1,90 +1,3 @@
-// const chart1 = document.getElementById('gradChart');
-// const chart2 = document.getElementById('enrollChart');
-//
-// let gradChart = new Chart(chart1, {
-//   type: 'bar',
-//   data: {
-//
-//       labels: ["California Average", "SMART Scholars"],
-//       datasets: [{
-//           data: [78, 100],
-//           backgroundColor: [
-//               'lightgrey',
-//               'lightgreen'
-//           ],
-//           borderColor: [
-//               'grey',
-//               'green'
-//           ],
-//           borderWidth: 1
-//       }]
-//   },
-//   options: {
-//     title: {
-//       display: true,
-//       text: 'High School Graduation Rates',
-//       fontSize: 22,
-//     },
-//     maintainAspectRatio: true,
-//     hover: {
-//       animationDuration: 100,
-//     },
-//     legend: {
-//       display: false,
-//     },
-//       scales: {
-//           yAxes: [{
-//               ticks: {
-//                   callback: function(value){return value+ " %"},
-//                   beginAtZero:true,
-//               }
-//           }]
-//       }
-//   }
-// });
-//
-// let enrollChart = new Chart(chart2, {
-//   type: 'bar',
-//   data: {
-//       labels: ["National Average", "SMART Scholars"],
-//       datasets: [{
-//           data: [48, 100],
-//           backgroundColor: [
-//               'lightgrey',
-//               'lightgreen'
-//           ],
-//           borderColor: [
-//               'grey',
-//               'green'
-//           ],
-//           borderWidth: 1
-//       }]
-//   },
-//   options: {
-//     title: {
-//       display: true,
-//       text: 'College Enrollment Rates',
-//       fontSize: 22,
-//     },
-//     maintainAspectRatio: true,
-//     hover: {
-//       animationDuration: 100,
-//     },
-//     legend: {
-//       display: false
-//     },
-//       scales: {
-//           yAxes: [{
-//               ticks: {
-//                   callback: function(value){return value+ " %"},
-//                   beginAtZero:true,
-//               }
-//           }]
-//       }
-//   }
-// });
-
-
 var chart1 = document.getElementById("gradChart");
 var gradChart = new Chart(chart1, {
     type: 'bar',
@@ -103,13 +16,14 @@ var gradChart = new Chart(chart1, {
           title: {
             display: true,
             text: 'High School Graduation Rates',
-            fontSize: 20,
+            fontSize: 45,
           },
           maintainAspectRatio: true,
           hover: {
-            animationDuration: 100,
+            animationDuration: 0,
           },
           legend: {
+            position: 'bottom',
             display: true,
           },
             scales: {
@@ -117,6 +31,7 @@ var gradChart = new Chart(chart1, {
                     ticks: {
                         callback: function(value){return value+ " %"},
                         beginAtZero:true,
+                        fontSize: 20,
 
                     }
                 }],
@@ -150,13 +65,14 @@ var enrollChart = new Chart(chart2, {
           title: {
             display: true,
             text: 'College Enrollment',
-            fontSize: 20,
+            fontSize: 45,
           },
           maintainAspectRatio: true,
           hover: {
             animationDuration: 100,
           },
           legend: {
+            position: 'bottom',
             display: true,
           },
             scales: {
@@ -164,6 +80,7 @@ var enrollChart = new Chart(chart2, {
                     ticks: {
                         callback: function(value){return value+ " %"},
                         beginAtZero:true,
+                        fontSize: 20,
                     }
                 }]
             },
@@ -183,20 +100,27 @@ let run1 = 0;
 let run2 = 0;
 
 Reveal.addEventListener('grad', function() {
-    if (run1===0) {
         Reveal.addEventListener( 'fragmentshown', function( event ) {
+            if (run1===0) {
     		addData1(gradChart, 'SMART Scholars (100%)', '#34b223', [100]);
+            run1++;
+            console.log(run1);
+            }
     	} );
-        run1++;
-    }
+    });
 
-})
 
 Reveal.addEventListener('enroll', function() {
-    if (run2===0) {
         Reveal.addEventListener( 'fragmentshown', function( event ) {
+            if (run2===0) {
             addData2(enrollChart, 'SMART Scholars (100%)', '#34b223', [100]);
+            run2++;
+            }
+	    });
+    });
+
+Reveal.addEventListener('slide1', function() {
+	Reveal.addEventListener( 'fragmentshown', function( event ) {
+		document.getElementById("opacity").classList.add('opacity-applied');
 	} );
-        run2++;
-    }
 })

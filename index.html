@@ -1,10 +1,23 @@
+<!DOCTYPE html>
+
 <html>
 	<head>
+		<title>Why Smart?</title>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110039991-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-110039991-1');
+		</script>
+
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
 		<link rel="stylesheet" href="./css/reveal.css">
 		<link rel="stylesheet" href="./css/white.css">
 		<link rel="stylesheet" href="./css/animate.css">
 		<link rel="stylesheet" href="./css/main.css">
-
 	</head>
 	<body>
 		<div class="reveal">
@@ -14,45 +27,31 @@
 					<h1>Why donate</h1>
 						<h1>to <span class="green">SMART</span>?</h1>
 						<p class="white">In 60 seconds...</p>
-						<div class="start-button"><i class="chevron fa fa-chevron-right animated2 fadeInLeft infinite" aria-hidden="true"></i></div>
+						<p class="keyboard mobile shadow">(Swipe right to navigate)</p>
+						<p class="keyboard desktop shadow">(Use keyboard to navigate)</p>
+						<div id="chevron" class="start-button"><i class="chevron fa fa-chevron-right animated2 fadeInLeft infinite" aria-hidden="true"></i></div>
 					</div>
 				</section>
 				<section data-autoslide="350">
 				</section>
 
-				<section data-state="slide1" id="slide-one" data-background-image="./img/SF-Skyline.png">
+				<section data-state="slide1" id="slide-one" data-background-image="./img/skyline.png">
+					<div id="slide-one-mobile">
 					<p id="opacity">Less than 10% of <span class="bold">low-income students</span> in San Francisco will graduate from college, contributing to a <span class="bold">cycle of poverty</span>.</p>
 					<h3 class="fragment"><span class="green">SMART</span> is working to change that.</h3>
-				</section>
-
-				<section data-background-image="./img/academic2.jpg" data-background-size="35%" data-background-position="bottom left" data-transition="slide-in fade-out" data-state="academic3" data-background-color="#f6feff">
-					<div class="paragraph">
-						<img class="cloud1 blue-background" src="./img/new/IMG_0733.jpg" alt="">
-						<img class="cloud2 blue-background" src="./img/new/IMG_0782.jpg" alt="">
-						<img class="cloud3 blue-background" src="./img/new/IMG_01143.jpg" alt="">
-						<img class="cloud4 blue-background" src="./img/new/IMG_4713.jpg" alt="">
-						<p>SMART Scholars are supported in an eight-year intensive program that addresses their <span id="academic" class="blue">academic</span>, <span id="social">social</span>, and emotional needs.</p>
 					</div>
 				</section>
 
-				<section data-transition="fade-in fade-out">
-					<div class="paragraph2">
-						<img class="cloud1 yellow-background" src="./img/new/IMG_1857.jpg" alt="">
-						<img class="cloud2 yellow-background" src="./img/new/IMG_1561.jpg" alt="">
-						<img class="cloud3 yellow-background" src="./img/new/IMG_0829.jpg" alt="">
-						<img class="cloud4 yellow-background" src="./img/new/IMG_0782.jpg" alt="">
-					<p>SMART Scholars are supported in an eight-year intensive program that addresses their academic, <span class="yellow">social</span>, and emotional needs.</p>
-					</div>
+				<section data-background-image="./img/backgroundb1.jpg" data-transition="slide-in fade-out">
+						<p>SMART Scholars are supported in an eight-year intensive program that addresses their <span class="blue bolder">academic</span>, <span class="bolder">social</span>, and <span class="bolder">emotional</span> needs.</p>
 				</section>
 
-				<section data-background-image="./img/EmotionalBackground.jpg" data-background-size="40%" data-background-position="bottom left" data-transition="fade-in slide-out">
-					<div class="paragraph">
-						<img class="cloud1 orange-background" src="./img/new/IMG_0733.jpg" alt="">
-						<img class="cloud2 orange-background" src="./img/new/IMG_1857.jpg" alt="">
-						<img class="cloud3 orange-background" src="./img/new/IMG_1779.jpg" alt="">
-						<img class="cloud4 orange-background" src="./img/new/IMG_1752.jpg" alt="">
-					<p>SMART Scholars are supported in an eight-year intensive program that addresses their academic, social, and <span class="orange">emotional</span> needs.</p>
-					</div>
+				<section data-background-image="./img/backgroundc1.jpg" data-transition="fade-in fade-out">
+					<p>SMART Scholars are supported in an eight-year intensive program that addresses their <span class="bolder">academic</span>, <span class="yellow bolder">social</span>, and <span class="bolder">emotional</span> needs.</p>
+				</section>
+
+				<section data-background-image="./img/backgrounda1.jpg" data-transition="fade-in slide-out">
+					<p>SMART Scholars are supported in an eight-year intensive program that addresses their <span class="bolder">academic</span>, <span class="bolder">social</span>, and <span class="orange bolder">emotional</span> needs.</p>
 				</section>
 
 				<section data-background-video="./vid/Staff_video2.mp4" data-background-video-loop="true">
@@ -70,21 +69,22 @@
 						<div class="fragment"></div>
 				</section>
 
-				<section data-background-image="./img/new/IMG_0117.jpg">
+				<section data-background-image="./img/princeton.jpg">
 					<p class="white">And <span class="bold">95%</span> of the SMART Scholars that have gone on to college are the <span class="bold">first in their family</span> to do so.</p>
 				</section>
 
-				<section id="donate-slide" data-state="donate-slide" data-background-image="./img/SF-Skyline.png">
+				<section id="donate-slide" data-state="donate-slide" data-background-image="./img/skyline.png">
 					<p>With your help, we can end the cycle of poverty <br>in San Francisco.</p>
 					<a href="https://www.crowdrise.com/SMARTs20thAnniversaryChallenge" target="_blank"><button type="button" name="button" id="donate-button">Donate Today</button></a>
+					<p>To learn more, visit <a href="https://www.thesmartprogram.org/" target="_blank">SMART</a>.</p>
 				</section>
 
-				<section>
-					<p>To learn more, visit <a href="https://www.thesmartprogram.org/">SMART</a>.</p>
+				<!-- <section>
+
 					<p>Share this with a friend:</p>
 					<a href="https://www.facebook.com/sharer/sharer.php"><i class="fa fa-facebook-official icons fa-2x" aria-hidden="true"></i></a>
 					<a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square icons fa-2x" aria-hidden="true"></i></a>
-				</section>
+				</section> -->
 
 			</div>
 		</div>
@@ -95,7 +95,6 @@
 		<script>
 			Reveal.initialize();
 		</script>
-		<script src="./js/app.js"></script>
 		<script src="./js/charts.js"></script>
 	</body>
 </html>
